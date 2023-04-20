@@ -132,7 +132,7 @@ def authenticate(otp_secret):
 # Create a Record Data Class that consists of the `sender`, `receiver`, and
 # `amount` attributes
 @dataclass
-class record:
+class Record:
     sender: str
     reciever: str
     amount: float
@@ -154,7 +154,7 @@ class Block:
 
     # @TODO
     # Rename the `data` attribute to `record`, and set the data type to `Record`
-    record: record
+    record: Record
 
     creator_id: int
     prev_hash: str = "0"
@@ -216,8 +216,8 @@ class PyChain:
 
             block_hash = block.hash_block()
 
-        print("Blockchain is Valid")
-        return True
+        return("Blockchain is Valid")
+        #return True
 
 ################################################################################
 # Streamlit Code
@@ -256,11 +256,11 @@ pychain = setup()
 
 # @TODO:
 # Add an input area where you can get a value for `sender` from the user.
-st.text_input("Enter the Sender Name:")
+sender_address = st.text_input("Enter the Sender address:")
 
 # @TODO:
 # Add an input area where you can get a value for `receiver` from the user.
-st.text_input("Enter the Reciever Name:")
+reciever_address = st.text_input("Enter the Reciever address:")
 
 # @TODO:
 # Add an input area where you can get a value for `amount` from the user.
@@ -275,7 +275,7 @@ if st.button("Add Block"):
     # which is set equal to a `Record` that contains the `sender`, `receiver`,
     # and `amount` values
     new_block = Block(
-        record= record,
+        record= Record(sender_address, reciever_address, amount),
         creator_id=42,
         prev_hash=prev_block_hash
     )
@@ -303,6 +303,7 @@ st.sidebar.write(selected_block)
 
 if st.button("Validate Chain"):
     st.write(pychain.is_valid())
+    st.write("Blockchain is Valid")
 
 ################################################################################
 # Step 4:
