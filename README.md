@@ -104,11 +104,14 @@ Once you have accessed the app, you can interact with it using the widgets on th
 
 ### Baseline Performance :
 
-![Alt Text](Images/Image_1)
+<img width="1466" alt="Image_1" src="https://user-images.githubusercontent.com/119983156/233723323-4c5bf5d9-0738-44fe-afcc-79f72fefa631.png">
+
  
 The Blockchain pychain_demo.py application displays the basic functionalities of a blockchain-- with the decentralized ledger system and other typical functions of the blockchain. Though there are no further security features added on to the program, these will be added onto the 'pychain_secure.py' application, which I plan on working on further in the future. 
 
-![Alt Text](Images/Image_2)
+<img width="1468" alt="Image_2" src="https://user-images.githubusercontent.com/119983156/233723367-233121cb-6348-40cb-9414-dc77d00f6696.png">
+
+
 
 ## Contributors
 
