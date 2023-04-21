@@ -1,4 +1,7 @@
 # Decentralized_Ledger_System
+
+![application-image](https://user-images.githubusercontent.com/119983156/233724063-8dcc5b3a-8a24-4af3-941d-6a1cc9ba3e5a.png)
+
 Blockchain Based Ledger system
 
 
